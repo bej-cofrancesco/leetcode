@@ -21,8 +21,8 @@ function addTwoNumbers(
       l2 = l2.next;
     }
 
-    curr = sum % 10 | 0;
-    node.next = new ListNode(curr);
+    curr = (sum / 10) | 0;
+    node.next = new ListNode(sum % 10);
     node = node.next;
   }
 
